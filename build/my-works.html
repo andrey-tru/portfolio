@@ -12,17 +12,48 @@
   </head>
   <body>
     <h1>Мои работы </h1>
-    <div class="container">
-      <ul id="slides">
-        <li class="slide showing"></li>
-        <li class="slide"></li>
-        <li class="slide"></li>
-      </ul>
-      <div class="buttons">
-        <button class="controls" id="previous">&lt;</button>
-        <button class="controls" id="next">&gt;</button>
+    <section class="work">
+      <div class="work_left">
+        <div class="work_left-text">Сайт школы онлайн образования</div>
+        <div class="work_left-web">Html, css, javascript</div>
+        <button>Посмотреть сайт</button>
       </div>
-    </div>
+      <div class="work_right">
+        <div class="container">
+          <ul id="slides">
+            <li class="slide showing"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+          </ul>
+          <div class="buttons">
+            <button class="controls" id="previous">&lt;</button>
+            <button class="controls" id="next">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2>Что обо мне говорят</h2>
+      <ul class="reviews__link">
+        <li>
+          <div class="reviews__img"> </div>
+          <div class="reviews__text">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Реторический обеспечивает оксмокс которое океана диких страна он заголовок единственное!</div>
+          <div class="reviews__name">Далеко-далеко за словесными горами.</div>
+        </li>
+        <li>
+          <div class="reviews__img"> </div>
+          <div class="reviews__text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Жаренные даже, все агентство безопасную подпоясал жизни ipsum грустный мир.</div>
+          <div class="reviews__name">Далеко-далеко за словесными горами.</div>
+        </li>
+      </ul>
+      <form>
+        <input class="name" type="text" id="name">
+        <input class="email" type="text" id="email">
+        <input class="message" type="text" id="message">
+        <button>Отправить</button>
+        <button>Очистить</button>
+      </form>
+    </section>
     <h2>Меню</h2>
     <ul class="menu">
       <li><a href="/index.html">Главная</a></li>

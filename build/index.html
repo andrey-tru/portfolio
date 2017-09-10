@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Добро пожаловать</title>
+    <title>Авторизуйтесь</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -11,12 +11,20 @@
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Главная</h1>
+    <h1>Авторизуйтесь</h1>
     <form>
       <label for="email"> </label>
       <input name="email" id="email">
       <label for="password"> </label>
       <input name="password" id="password">
+      <input type="checkbox" name="checkbox" id="checkbox">
+      <label for="checkbox">Я человек</label>
+      <div class="robot-text">Вы точно не робот?</div>
+      <input class="robot-radio" type="radio">
+      <label for="robot-radio">Да</label>
+      <input class="robot-radio" type="radio">
+      <label for="robot-radio">Не уверен</label>
+      <button>На главную</button>
       <button>Войти</button>
     </form>
     <h2>Меню</h2>

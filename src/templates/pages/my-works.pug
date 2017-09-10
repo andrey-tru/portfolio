@@ -5,4 +5,27 @@ block variables
 
 block content
   h1 Мои работы 
-  include ../common/slider.pug
+  section.work
+    div.work_left
+      div.work_left-text Сайт школы онлайн образования
+      div.work_left-web Html, css, javascript
+      button Посмотреть сайт
+    div.work_right
+        include ../common/slider.pug
+  section.reviews
+    h2 Что обо мне говорят
+    ul.reviews__link
+      li
+        div.reviews__img 
+        div.reviews__text Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Реторический обеспечивает оксмокс которое океана диких страна он заголовок единственное!
+        div.reviews__name Далеко-далеко за словесными горами.
+      li
+        div.reviews__img 
+        div.reviews__text Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Жаренные даже, все агентство безопасную подпоясал жизни ipsum грустный мир.
+        div.reviews__name Далеко-далеко за словесными горами.
+    form
+      input(type="text" class="name" id="name")
+      input(type="text" class="email" id="email")
+      input(type="text" class="message" id="message")
+      button Отправить
+      button Очистить

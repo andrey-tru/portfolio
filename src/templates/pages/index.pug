@@ -1,13 +1,22 @@
 extends ../template
 
 block variables
-  - var title = 'Добро пожаловать'
+  - var title = 'Авторизуйтесь'
 
 block content
-  h1 Главная
+  h1 Авторизуйтесь
   form
     label(for="email") 
     input(name="email" id="email")
     label(for="password") 
     input(name="password" id="password")
+    input(type="checkbox" name="checkbox" id="checkbox")
+    label(for="checkbox") Я человек
+    div.robot-text Вы точно не робот?
+    input(type="radio" class="robot-radio") 
+    label(for="robot-radio") Да
+    input(type="radio" class="robot-radio") 
+    label(for="robot-radio") Не уверен
+
+    button На главную
     button Войти
