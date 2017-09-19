@@ -3,6 +3,107 @@ extends ../template
 block variables
   - var title = 'Обо мне'
 
-block content
-  h1 Обо мне
-  include ../common/technologies.pug
+block content  
+  include ../common/header.pug
+  section.section
+    .container
+      .info
+        .info__left
+          .block-title Обо мне
+          .info__left-content            
+            .info__left-img
+            .info__title
+              .block-text Кто я
+              .block-band
+            .info__left-text Я веб разработчик из Воронежа. Мне 20 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+            .info__left-text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+        .info__right
+          .info__title
+            .block-text Чем я могу быть вам полезен
+            .block-band
+          .info__right-text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+          .info__right-content
+            ul.skills-list
+              li.skills-list__item
+                .skills-row
+                  .skills-row__title Frontend
+                  ul.wrap
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-15")
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-55")
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-95")
+              li.skills-list__item
+                .skills-row
+                  .skills-row__title Backend
+                  ul.wrap
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-15")
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-55")
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-95")                        
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-95")
+              li.skills-list__item
+                .skills-row
+                  .skills-row__title WorkFlow
+                  ul.wrap
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-15")
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-55")
+                    li.item
+                      svg(viewBox='0 0 110 110').circles
+                        circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-95")
+
+  section.section.map
+    .map__data
+      .contacts
+        .contacts__title
+          .block-text Контакты
+          .block-band 
+        .contacts__center
+          ul.contacts__list
+            li.contacts__item
+              .contacts-row__item 
+                svg(class="contacts-icon") 
+                  use(xlink:href="assets/images/sprite/sprite.svg#skype")
+              .contacts-row__content andrei_67705
+            li.contacts__item
+              .contacts-row__item 
+                svg(class="contacts-icon") 
+                  use(xlink:href="assets/images/sprite/sprite.svg#mail")
+              .contacts-row__content a.truxachev@mail.ru
+          ul.contacts__list
+            li.contacts__item
+              .contacts-row__item 
+                svg(class="contacts-icon") 
+                    use(xlink:href="assets/images/sprite/sprite.svg#phone")
+              .contacts-row__content +7 (900)-306-46-44
+            li.contacts__item
+              .contacts-row__item 
+                svg(class="contacts-icon") 
+                    use(xlink:href="assets/images/sprite/sprite.svg#map_marker")
+              .contacts-row__content Россия г.Воронеж, ул.Ленина 1
+    include ../common/footer.pug

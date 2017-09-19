@@ -1,0 +1,36 @@
+.form-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: rem(380px);
+    height: rem(440px);
+    background: rgba(0, 0, 0, .5);
+    color: #ffffff;
+    font-size: 16px;
+}
+.button{
+    width: 50%;
+    height: rem(45px);
+    margin: 0;
+    background-color: $blue;
+    border: 0;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    &:hover{
+        background-color: #083c96;
+    }
+    &:active{
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+.button-border{
+    border-right: rem(2px) solid #7390bf;
+}

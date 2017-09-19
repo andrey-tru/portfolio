@@ -3,7 +3,6 @@ essential styles:
 these make the slideshow work
 */
 #slides{
-	position: relative;
 	height: 300px;
 	padding: 0px;
 	margin: 0px;
@@ -14,7 +13,7 @@ these make the slideshow work
 	left: 0px;
 	top: 0px;
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	opacity: 0;
 	z-index: 1;
 	transition: opacity 1s;
@@ -59,12 +58,13 @@ just for appearance; change whatever you want
   background: #333;
   color: #fff;
   border: none;
-  padding: 20px 0px;
+  padding: 139px 0px;
   font-size: 20px;
   cursor: pointer;
   border: 2px solid #fff;
-  margin: 10px 0px 0px 10px;
-  width: 70px;
+  margin: 10px 0px 0px 8px;
+  width: 48%;
+  transform: rotate(-90deg);
 }
 
 .controls:hover,
@@ -73,12 +73,8 @@ just for appearance; change whatever you want
   color: #333;
 }
 
-.container{
-  position: relative;
-}
-
 .buttons{
-  position: absolute;
+  position: relative;
   left: 0px;
   top: 0px;
   z-index: 10;

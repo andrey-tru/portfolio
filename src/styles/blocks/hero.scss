@@ -1,0 +1,120 @@
+.hero__text{
+    font-size: rem(35px);
+    margin-bottom: rem(35px);
+}
+.hero__field{
+    width: rem(340px);
+    height: rem(45px);
+    margin-bottom: rem(20px);
+}
+.hero__block{
+    display: flex;
+    flex-direction: row;
+    font-size: rem(16px);
+    margin-bottom: rem(20px);
+    &:last-child{
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+.form__authorization {
+    display: flex;
+    padding-bottom: rem(16px);
+}
+
+.form__authorization-label{
+    display: flex;
+    background-color: #f0efe9;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__authorization-icon{
+    height: rem(16px);
+    width: rem(48px);
+}
+
+.form__authorization-input{
+    width: 100%;
+    border: none;
+    height: rem(36px);
+}
+.hero__robot-text{
+    margin-bottom: rem(20px);
+}
+.hero__radio {
+    position: relative;
+    white-space: nowrap;
+    margin-right: rem(20px);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero__radio-elem {
+    position: absolute;
+    top: 0;
+    left: rem(-9999px);
+  }
+  
+  .hero__radio-fake {
+    width: rem(20px);
+    height: rem(20px);
+    border-radius: 50%;
+    margin-left: rem(35px);
+    background: #fff;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: rem(0px);
+      height: rem(0px);
+      border-radius: 50%;
+      background: $blue;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: width .3s, height .3s;
+    }
+  }
+  
+  .hero__radio-elem:checked {
+    &+.hero__radio-fake {
+      &:after {
+        width: rem(8px);
+        height: rem(8px);
+      }
+    }
+  }
+  
+  .hero__radio-text {
+    font-size: rem(16px);
+    color: #fff;
+    margin-left: rem(10px);
+  }
+  
+  .hero__radio_checkbox {
+    .hero__radio-fake {
+      border-radius: rem(0px);
+        
+    }
+    .hero__radio-elem {
+      &+.hero__radio-fake {
+        &:after {
+          background: transparent;
+        }
+      }
+    }
+    .hero__radio-elem:checked {
+      &+.hero__radio-fake {
+        &:after {
+          background: url("../images/check.png") 50% no-repeat transparent;
+          background-color: $blue;
+          width: 100%;
+          height: 100%;
+          border-radius: rem(0px);
+        }
+      }
+    }
+  }

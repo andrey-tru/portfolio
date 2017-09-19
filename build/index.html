@@ -11,28 +11,64 @@
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Авторизуйтесь</h1>
-    <form>
-      <label for="email"> </label>
-      <input name="email" id="email">
-      <label for="password"> </label>
-      <input name="password" id="password">
-      <input type="checkbox" name="checkbox" id="checkbox">
-      <label for="checkbox">Я человек</label>
-      <div class="robot-text">Вы точно не робот?</div>
-      <input class="robot-radio" type="radio">
-      <label for="robot-radio">Да</label>
-      <input class="robot-radio" type="radio">
-      <label for="robot-radio">Не уверен</label>
-      <button>На главную</button>
-      <button>Войти</button>
-    </form>
-    <h2>Меню</h2>
+    <div class="wrapper">
+      <div class="maincontent">
+        <section class="section hero header-background">
+          <div class="container">
+            <div class="form-center">
+              <form class="form">
+                <div class="hero__text">Авторизуйтесь</div>
+                <div class="form__authorization">
+                  <label class="form__authorization-label" for="email">
+                    <svg class="form__authorization-icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#login"></use>
+                    </svg>
+                    <input class="form__authorization-input" name="email" id="email">
+                  </label>
+                </div>
+                <div class="form__authorization">
+                  <label class="form__authorization-label" for="password"> 
+                    <svg class="form__authorization-icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#passworld"></use>
+                    </svg>
+                    <input class="form__authorization-input" name="password" id="password">
+                  </label>
+                </div>
+                <div class="hero__block">
+                  <label class="hero__radio hero__radio_checkbox">
+                    <input class="hero__radio-elem" type="checkbox" name="checkbox" id="checkbox">
+                    <div class="hero__radio-fake"> </div>
+                    <div class="hero__radio-text">Я человек</div>
+                  </label>
+                </div>
+                <div class="hero__robot-text">Вы точно не робот?</div>
+                <div class="hero__block">
+                  <label class="hero__radio">
+                    <input class="hero__radio-elem" type="radio" name="radio" id="radio1">
+                    <div class="hero__radio-fake"></div>
+                    <div class="hero__radio-text">Да              </div>
+                  </label>
+                  <label class="hero__radio">
+                    <input class="hero__radio-elem" type="radio" name="radio" id="radio2">
+                    <div class="hero__radio-fake"> </div>
+                    <div class="hero__radio-text">Не уверен   </div>
+                  </label>
+                </div>
+                <div class="hero__block">
+                  <button class="button button-border" type="submit">На главную</button>
+                  <button class="button" type="submit" onclick="window.location.href='/welcome.html'">Войти</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <ul class="menu">
-      <li><a href="/index.html">Главная</a></li>
-      <li><a href="/about.html">Обо мне</a></li>
-      <li><a href="/my-works.html">Мои работы</a></li>
-      <li><a href="/blog.html">Блог</a></li>
+      <li class="menu__link"><a class="menu__item" href="/index.html">Главная</a></li>
+      <li class="menu__link"><a class="menu__item" href="/about.html"> Обо мне</a></li>
+      <li class="menu__link"><a class="menu__item" href="/my-works.html"> Мои работы</a></li>
+      <li class="menu__link"><a class="menu__item" href="/blog.html"> Блог</a></li>
     </ul>
   </body>
 </html>

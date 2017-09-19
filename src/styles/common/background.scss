@@ -1,0 +1,112 @@
+.header-background{
+    background: url("../images/im-bg.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    padding-top: rem(36px);
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+}
+.social{
+    display: flex;
+    justify-content: flex-start;
+}
+.social__item {
+    margin-left: rem(20px); 
+    &:first-child {
+        margin-left: 0; 
+    }
+}
+.social__link {
+    width: rem(30px);
+    height: rem(20px);
+}
+.hamburger-menu {
+    fill: white;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+.header__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 80vh;
+}
+.header__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 16px;
+}
+.header__img{
+    width: rem(140px);
+    height: rem(140px);
+    border-radius: 50%;
+    background: url("../images/my.png") center center no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.header__name{
+    font-size: rem(35px);
+}
+.arrow {
+    position: absolute;
+    bottom: rem(0px);
+    left: 50%;
+    width: rem(40px);
+    transform: translateX(-50%);
+    transition: .3s;
+    height: rem(40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      .arrow__icon {
+        margin-top: rem(-10px);
+        width: rem(20px);
+        height: rem(20px);
+        }
+    }
+}
+.arrow__icon {
+    width: rem(20px);
+    height: rem(20px);
+    transition: .3s;
+    fill: #fff;
+}
+
+.header__triangle {
+    width: 50%;
+    height: rem(320px);
+    position: relative;
+}
+
+.triangle-container {
+    position: relative;
+    display: flex;
+    height: 0;
+    width: 100%;
+    overflow: visible;
+}
+
+.triangle {
+    position: absolute;
+    width: 100%;
+    top: rem(-190px);
+    height: rem(190px);
+}
+
+.triangle .left {
+    fill: #f2f0e8;
+}
+
+.triangle .right {
+    fill: #f2f0e8;
+}
+.figure{
+    display: flex;
+    flex-direction: row;
+}

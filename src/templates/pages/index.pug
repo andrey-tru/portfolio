@@ -4,19 +4,36 @@ block variables
   - var title = 'Авторизуйтесь'
 
 block content
-  h1 Авторизуйтесь
-  form
-    label(for="email") 
-    input(name="email" id="email")
-    label(for="password") 
-    input(name="password" id="password")
-    input(type="checkbox" name="checkbox" id="checkbox")
-    label(for="checkbox") Я человек
-    div.robot-text Вы точно не робот?
-    input(type="radio" class="robot-radio") 
-    label(for="robot-radio") Да
-    input(type="radio" class="robot-radio") 
-    label(for="robot-radio") Не уверен
-
-    button На главную
-    button Войти
+  section.section.hero.header-background
+    .container
+      .form-center
+        form.form
+          .hero__text Авторизуйтесь
+          .form__authorization
+            label(for="email").form__authorization-label
+              svg.form__authorization-icon
+                use(xlink:href="assets/images/sprite/sprite.svg#login")
+              input(name="email" id="email").form__authorization-input
+          .form__authorization
+            label(for="password").form__authorization-label 
+              svg.form__authorization-icon
+                use(xlink:href="assets/images/sprite/sprite.svg#passworld")
+              input(name="password" id="password").form__authorization-input
+          .hero__block
+            label(class="hero__radio hero__radio_checkbox")
+              input(type="checkbox" name="checkbox" id="checkbox" class="hero__radio-elem")
+              .hero__radio-fake 
+              .hero__radio-text Я человек
+          .hero__robot-text Вы точно не робот?
+          .hero__block
+            label(class="hero__radio")
+              input(type="radio" name="radio" id="radio1" class="hero__radio-elem") 
+              .hero__radio-fake
+              .hero__radio-text Да              
+            label(class="hero__radio")
+              input(type="radio" name="radio" id="radio2" class="hero__radio-elem")
+              .hero__radio-fake 
+              .hero__radio-text Не уверен   
+          .hero__block
+            button(type="submit" class="button button-border") На главную
+            button(type="submit" class="button" onclick="window.location.href='/welcome.html'") Войти

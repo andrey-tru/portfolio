@@ -3,29 +3,40 @@ extends ../template
 block variables
   - var title = 'Мои работы'
 
-block content
-  h1 Мои работы 
-  section.work
-    div.work_left
-      div.work_left-text Сайт школы онлайн образования
-      div.work_left-web Html, css, javascript
-      button Посмотреть сайт
-    div.work_right
-        include ../common/slider.pug
-  section.reviews
-    h2 Что обо мне говорят
-    ul.reviews__link
-      li
-        div.reviews__img 
-        div.reviews__text Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Реторический обеспечивает оксмокс которое океана диких страна он заголовок единственное!
-        div.reviews__name Далеко-далеко за словесными горами.
-      li
-        div.reviews__img 
-        div.reviews__text Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Жаренные даже, все агентство безопасную подпоясал жизни ipsum грустный мир.
-        div.reviews__name Далеко-далеко за словесными горами.
-    form
-      input(type="text" class="name" id="name")
-      input(type="text" class="email" id="email")
-      input(type="text" class="message" id="message")
-      button Отправить
-      button Очистить
+block content  
+  include ../common/header.pug
+  section.section
+    .container
+      .work
+        .work__left
+          .block-text Сайт школы онлайн образования
+          .block-band
+          .work__left-web Html, css, javascript
+          button.work__button Посмотреть сайт
+        .work__right
+          include ../common/slider.pug
+  section.section.reviews
+    .container
+      .review__text Что обо мне говорят
+      ul.reviews__list
+        li.reviews__item
+          .reviews__img 
+          .reviews__txt Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Реторический обеспечивает оксмокс которое океана диких страна он заголовок единственное!
+          .reviews__name Далеко-далеко
+          .reviews__rang - преподаватель
+        li.reviews__item
+          .reviews__img 
+          .reviews__txt Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Жаренные даже, все агентство безопасную подпоясал жизни ipsum грустный мир.
+          .reviews__name Далеко-далеко
+          .reviews__rang - преподаватель
+      .reviews__center
+        form.form.reviews__form
+          .block-text.color__text Связаться со мной
+          .block-band
+          input(type="text" id="name").work__input.work__input-text
+          input(type="text" id="email").work__input.work__input-text
+          input(type="text" id="message").work__input.work__text-area  
+          .hero__block
+            button(type="submit" class="button") Отправить
+            button(type="submit" class="button reviews__button") Очистить
+  include ../common/footer.pug

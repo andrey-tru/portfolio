@@ -1,8 +1,23 @@
+$blue: #0548be;
+
 body{
     margin: 10px;
-    background: #ccc
+    background: #ffffff;
 }
+
+@import 'layout/normalize';
+@import 'layout/layout';
+@import 'layout/media';
 
 @import 'common/technologies';
 @import 'common/slider';
 @import 'common/menu';
+@import 'common/form';
+@import 'common/background';
+@import 'common/footer';
+
+@import 'blocks/hero';
+@import 'blocks/section';
+@import 'blocks/about';
+@import 'blocks/work';
+@import 'blocks/blog';

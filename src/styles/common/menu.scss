@@ -1,7 +1,16 @@
 .menu{
     padding: 0;
-    li{
+    .menu__link{
         display: inline-block;
         list-style: none;
+        margin-right: rem(35px);
+        &:last-child{
+            margin: 0;
+        }
+        .menu__item {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: rem(16px);
+        }
     }
 }
