@@ -20,6 +20,7 @@
     height: rem(45px);
     margin: 0;
     background-color: $blue;
+    @include roboto(medium, normal);
     border: 0;
     color: #ffffff;
     outline: none;

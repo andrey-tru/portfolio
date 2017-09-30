@@ -4,12 +4,13 @@
     text-align: center;
 }
 .info__left{
-    width: rem(450px);
+    width: 50%;
     height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;   
     align-items: center;
+    background: #f2f0e8;
 }
 .block-title{
     font-size: rem(63px);    
@@ -26,7 +27,7 @@
 
 .info__left-img {
     background: url(../images/my.png) center top no-repeat;
-    width: rem(440px);
+    width: 75%;
     height: rem(390px);
     background-size: 100%;
     margin-bottom: rem(40px);
@@ -45,13 +46,14 @@
 }
 
 .info__right{
-    width: rem(580px);
+    width: 50%;
     height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;   
     align-items: center;
     padding-left: rem(60px);
+    background: #f4f5f0;
 }
 .info__right-text{
     font-size: rem(16px);

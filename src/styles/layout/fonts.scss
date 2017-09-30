@@ -1,0 +1,117 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansus';
+    src: url('../fonts/sansus-webissimo-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-bolditalic-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-bold-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-italic-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-light-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-mediumitalic-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-medium-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-regular-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin awesome() {
+	font-family: 'FontAwesome';
+}
+
+@mixin roboto($weight: light, $style: normal) {
+    font-family: 'Roboto';
+    
+	@if $weight == light and $style == normal {
+		font-weight: 300;
+    }
+
+    @if $weight == light and $style == italic {
+		font-weight: 300;
+        font-style: italic;
+    }
+
+    @if $weight == italic and $style == italic {
+		font-weight: 100;
+    }
+    
+    @if $weight == regular and $style == normal {
+		font-weight: 400;
+	}
+
+	@if $weight == medium and $style == normal {
+		font-weight: 500;
+	}
+
+	@if $weight == medium and $style == italic {
+		font-weight: 500;
+        font-style: italic;
+	}
+
+	@if $weight == bold and $style == normal {
+		font-weight: bold;
+	}
+
+	@if $weight == bold and $style == italic {
+		font-weight: bold;
+        font-style: italic;
+	}
+}
+
+@mixin sansus() {
+	font-family: 'Sansus';
+}

@@ -1,6 +1,7 @@
 .hero__text{
     font-size: rem(35px);
     margin-bottom: rem(35px);
+    @include sansus;
 }
 .hero__field{
     width: rem(340px);
@@ -41,6 +42,7 @@
 }
 .hero__robot-text{
     margin-bottom: rem(20px);
+    @include roboto(bold, normal);
 }
 .hero__radio {
     position: relative;
@@ -92,6 +94,7 @@
     font-size: rem(16px);
     color: #fff;
     margin-left: rem(10px);
+    @include roboto(regular, normal);
   }
   
   .hero__radio_checkbox {
