@@ -15,25 +15,38 @@
       <div class="maincontent">
         <section class="section header-background">
           <div class="container">
-            <ul class="social">
-              <li class="social__item"><img class="social__link" src="assets/images/icons/vk.svg" alt=""></li>
-              <li class="social__item"><img class="social__link" src="assets/images/icons/github.svg" alt=""></li>
-              <li class="social__item"><img class="social__link" src="assets/images/icons/in.svg" alt=""></li>
-            </ul>
-            <div class="hamburger-menu"><a class="hamburger-menu-link" href="#"></a>
-              <div class="hamburger-menu-link__bars"></div>
-            </div>
-            <div class="header__center">
-              <div class="header__info">
-                <div class="header__img"></div>
-                <div class="header__name">Андрей Трухачев</div>
-                <div class="header__text">Личный сайт веб разработчика</div>
+            <div class="menu__container">
+              <ul class="social">
+                <li class="social__item"><a class="social__btn" href="https://vk.com/andrei_tr">
+                    <svg class="social__link">
+                      <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__btn" href="https://github.com/andrey-tru">
+                    <svg class="social__link">
+                      <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__btn" href="https://www.instagram.com/andres36n/">
+                    <svg class="social__link">
+                      <use xlink:href="assets/images/sprite/sprite.svg#inst"></use>
+                    </svg></a></li>
+              </ul>
+              <div class="hamburger-menu"><a class="hamburger-menu-link" href="#"></a>
+                <div class="hamburger-menu-link__bars"></div>
               </div>
             </div>
-            <div class="arrow"> 
-              <svg class="arrow__icon">
-                <use xlink:href="assets/images/sprite/sprite.svg#arrow"></use>
-              </svg>
+            <div class="header__bot">
+              <div class="header__center">
+                <div class="header__info">
+                  <div class="header__img"></div>
+                  <div class="header__name">Андрей Трухачев</div>
+                  <div class="header__text">Личный сайт веб разработчика</div>
+                </div>
+              </div>
+              <div class="arrow"> 
+                <svg class="arrow__icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </div>
             </div>
           </div>
           <div class="triangle-container">
@@ -160,90 +173,95 @@
           </div>
         </section>
         <section class="section map">
-          <div class="map__data">
-            <div class="contacts">
-              <div class="contacts__title">
-                <div class="block-text">Контакты</div>
-                <div class="block-band"> </div>
-              </div>
-              <div class="contacts__center">
-                <ul class="contacts__list">
-                  <li class="contacts__item">
-                    <div class="contacts-row__item"> 
-                      <svg class="contacts-icon"> 
-                        <use xlink:href="assets/images/sprite/sprite.svg#skype"></use>
-                      </svg>
-                    </div>
-                    <div class="contacts-row__content">andrei_67705</div>
-                  </li>
-                  <li class="contacts__item">
-                    <div class="contacts-row__item"> 
-                      <svg class="contacts-icon"> 
-                        <use xlink:href="assets/images/sprite/sprite.svg#mail"></use>
-                      </svg>
-                    </div>
-                    <div class="contacts-row__content">a.truxachev@mail.ru</div>
-                  </li>
-                </ul>
-                <ul class="contacts__list">
-                  <li class="contacts__item">
-                    <div class="contacts-row__item"> 
-                      <svg class="contacts-icon"> 
-                        <use xlink:href="assets/images/sprite/sprite.svg#phone"></use>
-                      </svg>
-                    </div>
-                    <div class="contacts-row__content">+7 (900)-306-46-44</div>
-                  </li>
-                  <li class="contacts__item">
-                    <div class="contacts-row__item"> 
-                      <svg class="contacts-icon"> 
-                        <use xlink:href="assets/images/sprite/sprite.svg#map_marker"></use>
-                      </svg>
-                    </div>
-                    <div class="contacts-row__content">Россия г.Воронеж, ул.Ленина 1</div>
-                  </li>
-                </ul>
-              </div>
+          <div class="contacts">
+            <div class="contacts__title">
+              <div class="block-text">Контакты</div>
+              <div class="block-band"> </div>
+            </div>
+            <div class="contacts__center">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <div class="contacts-row__item"> 
+                    <svg class="contacts-icon"> 
+                      <use xlink:href="assets/images/sprite/sprite.svg#skype"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts-row__content">andrei_67705</div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts-row__item"> 
+                    <svg class="contacts-icon"> 
+                      <use xlink:href="assets/images/sprite/sprite.svg#mail"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts-row__content">a.truxachev@mail.ru</div>
+                </li>
+              </ul>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <div class="contacts-row__item"> 
+                    <svg class="contacts-icon"> 
+                      <use xlink:href="assets/images/sprite/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts-row__content">+7 (900)-306-46-44</div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts-row__item"> 
+                    <svg class="contacts-icon"> 
+                      <use xlink:href="assets/images/sprite/sprite.svg#map_marker"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts-row__content">Россия г.Воронеж, ул.Ленина 1</div>
+                </li>
+              </ul>
             </div>
           </div>
           <footer class="footer">
             <div class="container">
               <div class="footer__center">
                 <div class="footer__container">     
-                  <div class="footer__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
+                  <p class="footer__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
                 </div>
                 <div class="footer__container">
                   <div class="footer__menu">
                     <ul class="menu">
-                      <li class="menu__link"><a class="menu__item" href="/index.html">Главная</a></li>
-                      <li class="menu__link"><a class="menu__item" href="/about.html"> Обо мне</a></li>
                       <li class="menu__link"><a class="menu__item" href="/my-works.html"> Мои работы</a></li>
+                      <li class="menu__link"><a class="menu__item" href="/about.html"> Обо мне</a></li>
                       <li class="menu__link"><a class="menu__item" href="/blog.html"> Блог</a></li>
+                      <li class="menu__link"><a class="menu__item" href="/authorization.html">Авторизация</a></li>
                     </ul>
                   </div>
-                  <ul class="footer__social">
-                    <li class="footer__social-item">
-                      <div class="footer__social-pic"><img class="social__link" src="assets/images/icons/vk.svg" alt=""></div>
-                    </li>
-                    <li class="footer__social-item">
-                      <div class="footer__social-pic"><img class="social__link" src="assets/images/icons/github.svg" alt=""></div>
-                    </li>
-                    <li class="footer__social-item">
-                      <div class="footer__social-pic"><img class="social__link" src="assets/images/icons/in.svg" alt=""></div>
-                    </li>
+                  <ul class="social">
+                    <li class="social__item"><a class="social__btn" href="https://vk.com/andrei_tr">
+                        <svg class="social__link social__color">
+                          <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__btn" href="https://github.com/andrey-tru">
+                        <svg class="social__link social__color">
+                          <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__btn" href="https://www.instagram.com/andres36n/">
+                        <svg class="social__link social__color">
+                          <use xlink:href="assets/images/sprite/sprite.svg#inst"></use>
+                        </svg></a></li>
                   </ul>
                 </div>
                 <div class="footer__container">     
                   <div class="contacts__center"></div>
                   <ul class="contacts__list">
-                    <li class="footer__item"></li>
-                    <div class="footer__text">andrei_67705</div>
-                    <li class="footer__item"></li>
-                    <div class="footer__text">a.truxachev@mail.ru</div>
-                    <li class="footer__item"></li>
-                    <div class="footer__text">+7 (900)-306-46-44</div>
-                    <li class="footer__item"></li>
-                    <div class="footer__text">Россия г.Воронеж, ул.Ленина 1</div>
+                    <li class="footer__item">
+                      <div class="footer__text">andrei_67705</div>
+                    </li>
+                    <li class="footer__item">
+                      <div class="footer__text">a.truxachev@mail.ru</div>
+                    </li>
+                    <li class="footer__item">
+                      <div class="footer__text">+7 (900)-306-46-44</div>
+                    </li>
+                    <li class="footer__item">
+                      <div class="footer__text">Россия г.Воронеж, ул.Ленина 1</div>
+                    </li>
                   </ul>
                 </div>
               </div>

@@ -3,7 +3,7 @@ essential styles:
 these make the slideshow work
 */
 #slides{
-	height: 300px;
+	height: 325px;
 	padding: 0px;
 	margin: 0px;
 	list-style-type: none;
@@ -61,10 +61,8 @@ just for appearance; change whatever you want
   padding: 139px 0px;
   font-size: 20px;
   cursor: pointer;
-  border: 2px solid #fff;
-  margin: 10px 0px 0px 8px;
-  width: 48%;
-  transform: rotate(-90deg);
+  border: 1px solid #fff;
+  width: 50%;
 }
 
 .controls:hover,

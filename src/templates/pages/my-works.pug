@@ -4,7 +4,43 @@ block variables
   - var title = 'Мои работы'
 
 block content  
-  include ../common/header.pug
+  section.section.header-background
+    .container
+      .menu__container
+        ul.social
+            li.social__item
+                a(href="https://vk.com/andrei_tr").social__btn
+                    svg.social__link
+                        use(xlink:href="assets/images/sprite/sprite.svg#vk")
+            li.social__item
+                a(href="https://github.com/andrey-tru").social__btn
+                    svg.social__link
+                        use(xlink:href="assets/images/sprite/sprite.svg#github")
+            li.social__item
+                a(href="https://www.instagram.com/andres36n/").social__btn
+                    svg.social__link
+                        use(xlink:href="assets/images/sprite/sprite.svg#inst")
+        .hamburger-menu
+            a(href="#").hamburger-menu-link
+            .hamburger-menu-link__bars
+      .header__work
+        .header__work-center
+            .header__info
+                .header__img
+                .header__name Андрей Трухачев
+                .header__text Личный сайт веб разработчика
+        .arrow 
+          svg.arrow__icon
+              use(xlink:href="assets/images/sprite/sprite.svg#arrow")
+    .triangle-container.triangle-work
+      .work__text
+        .triangle-text Мои работы
+      .header__triangle
+          svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle work-triangle")
+              polygon(class = "work-triangle" points="0,0   0,200   1000,200   1000,35.5")
+      .header__triangle
+          svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle work-triangle")
+              polygon(class = "work-triangle" points="1000, 0   1000, 200   0, 200   0, 35.5")
   section.section
     .container
       .work
@@ -12,7 +48,11 @@ block content
           .block-text Сайт школы онлайн образования
           .block-band
           .work__left-web Html, css, javascript
-          button.work__button Посмотреть сайт
+          button.work__button
+            .work__button-svg 
+              svg.social__link
+                use(xlink:href="assets/images/sprite/sprite.svg#link")
+            .work__button-text Посмотреть сайт
         .work__right
           include ../common/slider.pug
   section.section.reviews
@@ -21,21 +61,21 @@ block content
       ul.reviews__list
         li.reviews__item
           .reviews__img 
-          .reviews__txt Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Реторический обеспечивает оксмокс которое океана диких страна он заголовок единственное!
+          p.reviews__txt Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Реторический обеспечивает оксмокс которое океана диких страна он заголовок единственное!
           .reviews__name Далеко-далеко
           .reviews__rang - преподаватель
         li.reviews__item
           .reviews__img 
-          .reviews__txt Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Жаренные даже, все агентство безопасную подпоясал жизни ipsum грустный мир.
+          p.reviews__txt Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Жаренные даже, все агентство безопасную подпоясал жизни ipsum грустный мир.
           .reviews__name Далеко-далеко
           .reviews__rang - преподаватель
       .reviews__center
         form.form.reviews__form
           .block-text.color__text Связаться со мной
           .block-band
-          input(type="text" id="name").work__input.work__input-text
-          input(type="text" id="email").work__input.work__input-text
-          input(type="text" id="message").work__input.work__text-area  
+          input(type="text" id="name" placeholder="Ваше имя").work__input.work__input-text
+          input(type="text" id="email" placeholder="Ваш e-mail").work__input.work__input-text
+          input(type="text" id="message" placeholder="Ваше сообщение").work__input.work__text-area  
           .hero__block
             button(type="submit" class="button") Отправить
             button(type="submit" class="button reviews__button") Очистить

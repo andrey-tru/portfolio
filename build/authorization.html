@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html land="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Авторизуйтесь</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="/assets/styles/app.min.css">
+    <script src="/assets/scripts/bundle.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <section class="section hero header-background">
+          <div class="container">
+            <div class="form-center">
+              <form class="form">
+                <div class="hero__text">Авторизуйтесь</div>
+                <div class="form__authorization">
+                  <label class="form__authorization-label" for="email">
+                    <svg class="form__authorization-icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#login"></use>
+                    </svg>
+                    <input class="form__authorization-input" name="email" id="email" placeholder="Логин">
+                  </label>
+                </div>
+                <div class="form__authorization">
+                  <label class="form__authorization-label" for="password"> 
+                    <svg class="form__authorization-icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#passworld"></use>
+                    </svg>
+                    <input class="form__authorization-input" name="password" id="password" placeholder="Пароль">
+                  </label>
+                </div>
+                <div class="hero__block">
+                  <label class="hero__radio hero__radio_checkbox">
+                    <input class="hero__radio-elem" type="checkbox" name="checkbox" id="checkbox">
+                    <div class="hero__radio-fake"> </div>
+                    <div class="hero__radio-text">Я человек</div>
+                  </label>
+                </div>
+                <div class="hero__robot-text">Вы точно не робот?</div>
+                <div class="hero__block">
+                  <label class="hero__radio">
+                    <input class="hero__radio-elem" type="radio" name="radio" id="radio1">
+                    <div class="hero__radio-fake"></div>
+                    <div class="hero__radio-text">Да              </div>
+                  </label>
+                  <label class="hero__radio">
+                    <input class="hero__radio-elem" type="radio" name="radio" id="radio2">
+                    <div class="hero__radio-fake"> </div>
+                    <div class="hero__radio-text">Не уверен   </div>
+                  </label>
+                </div>
+                <div class="hero__block">
+                  <button class="button button-border" type="button" onclick="window.location.href='/index.html'">На главную</button>
+                  <button class="button" type="submit">Войти</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

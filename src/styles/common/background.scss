@@ -3,13 +3,21 @@
     background-size: cover;
     position: relative;
     height: 100vh;
-    padding-top: rem(36px);
+    padding-top: rem(30px);
     display: flex;
     flex-flow: wrap;
     align-content: space-between;
 }
+.header-blog{
+    height: 70vh;
+}
+.menu__container{
+    display: flex;
+    flex-direction: row;
+}
 .social{
     display: flex;
+    padding: 0 rem(30px);
     justify-content: flex-start;
 }
 .social__item {
@@ -19,19 +27,44 @@
     }
 }
 .social__link {
+    fill: #ffffff;
     width: rem(30px);
     height: rem(20px);
+}
+.social__btn:hover{
+    .social__link{
+        fill: #004cd1;
+        opacity: 1;
+    }
 }
 .hamburger-menu {
     fill: white;
     height: 1.75rem;
     width: 1.75rem;
 }
-.header__center{
+.header__bot{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80vh;
+}
+.header__center{  
+    height: 60vh;
+}
+.header__center-blog{
     display: flex;
     justify-content: center;
     align-items: center;    
-    height: 80vh;
+    height: 55vh;
+}
+.header__work{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 65vh;
+}
+.header__work-center{   
+    height: 55vh;
 }
 .header__info{
     display: flex;
@@ -39,7 +72,8 @@
     align-items: center;
     flex-direction: column;
     color: #ffffff;
-    font-size: 16px;
+    font-size: rem(16px);
+    @include roboto(regular, normal);
 }
 .header__img{
     width: rem(140px);
@@ -51,6 +85,11 @@
 }
 .header__name{
     font-size: rem(35px);
+    @include roboto(medium, normal);
+}
+.header__title{
+    font-size: rem(63px);
+    @include sansus();
 }
 .arrow {
     position: absolute;
@@ -98,7 +137,13 @@
     top: rem(-190px);
     height: rem(190px);
 }
-
+.triangle-work{
+    height: auto; 
+}
+.work-triangle{
+    top: -25%;
+    height: rem(260px);
+}
 .triangle .left {
     fill: #f2f0e8;
 }
@@ -106,7 +151,30 @@
 .triangle .right {
     fill: #f4f5f0;
 }
+.triangle .blog-triangle{
+    fill: #faf8f0;
+}
+.triangle .work-triangle{
+    fill: #0d1020;
+    opacity: .9;
+}
 .figure{
     display: flex;
     flex-direction: row;
+}
+.work__text{
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+    height: rem(175px);
+}
+.triangle-text{
+    font-size: rem(63px);
+    height: 100%;
+    @include sansus();
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

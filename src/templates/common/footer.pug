@@ -2,28 +2,31 @@ footer.footer
     .container
         .footer__center
             .footer__container      
-                .footer__text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                p.footer__text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
             .footer__container
                 .footer__menu
                     include ../common/menu.pug
-                ul.footer__social
-                    li.footer__social-item
-                        .footer__social-pic
-                            img(src="assets/images/icons/vk.svg" alt="").social__link
-                    li.footer__social-item
-                        .footer__social-pic
-                            img(src="assets/images/icons/github.svg" alt="").social__link
-                    li.footer__social-item
-                        .footer__social-pic
-                            img(src="assets/images/icons/in.svg" alt="").social__link
+                ul.social
+                    li.social__item
+                        a(href="https://vk.com/andrei_tr").social__btn
+                            svg.social__link.social__color
+                                use(xlink:href="assets/images/sprite/sprite.svg#vk")
+                    li.social__item
+                        a(href="https://github.com/andrey-tru").social__btn
+                            svg.social__link.social__color
+                                use(xlink:href="assets/images/sprite/sprite.svg#github")
+                    li.social__item
+                        a(href="https://www.instagram.com/andres36n/").social__btn
+                            svg.social__link.social__color
+                                use(xlink:href="assets/images/sprite/sprite.svg#inst")
             .footer__container      
                 .contacts__center
                 ul.contacts__list
                     li.footer__item
-                    .footer__text andrei_67705
+                        .footer__text andrei_67705
                     li.footer__item
-                    .footer__text a.truxachev@mail.ru
+                        .footer__text a.truxachev@mail.ru
                     li.footer__item
-                    .footer__text +7 (900)-306-46-44
+                        .footer__text +7 (900)-306-46-44
                     li.footer__item
-                    .footer__text Россия г.Воронеж, ул.Ленина 1
+                        .footer__text Россия г.Воронеж, ул.Ленина 1

@@ -1,0 +1,39 @@
+extends ../template
+
+block variables
+  - var title = 'Авторизуйтесь'
+
+block content
+  section.section.hero.header-background
+    .container
+      .form-center
+        form.form
+          .hero__text Авторизуйтесь
+          .form__authorization
+            label(for="email").form__authorization-label
+              svg.form__authorization-icon
+                use(xlink:href="assets/images/sprite/sprite.svg#login")
+              input(name="email" id="email" placeholder="Логин").form__authorization-input
+          .form__authorization
+            label(for="password").form__authorization-label 
+              svg.form__authorization-icon
+                use(xlink:href="assets/images/sprite/sprite.svg#passworld")
+              input(name="password" id="password" placeholder="Пароль").form__authorization-input
+          .hero__block
+            label(class="hero__radio hero__radio_checkbox")
+              input(type="checkbox" name="checkbox" id="checkbox" class="hero__radio-elem")
+              .hero__radio-fake 
+              .hero__radio-text Я человек
+          .hero__robot-text Вы точно не робот?
+          .hero__block
+            label(class="hero__radio")
+              input(type="radio" name="radio" id="radio1" class="hero__radio-elem") 
+              .hero__radio-fake
+              .hero__radio-text Да              
+            label(class="hero__radio")
+              input(type="radio" name="radio" id="radio2" class="hero__radio-elem")
+              .hero__radio-fake 
+              .hero__radio-text Не уверен   
+          .hero__block
+            button(type="button" class="button button-border" onclick="window.location.href='/index.html'") На главную
+            button(type="submit" class="button") Войти

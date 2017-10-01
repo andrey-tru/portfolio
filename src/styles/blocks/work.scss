@@ -19,18 +19,21 @@
     color: #474b57;
     text-align: center;
     width: rem(320px);
-    margin-bottom: rem(30px);
+    margin-bottom: rem(20px);
+    @include sansus();
+    text-transform: uppercase;
 }
 .block-band{
     width: rem(90px);
     height: rem(3px);
     background: #9c9d9f;
-    margin-bottom: rem(30px)
+    margin-bottom: rem(20px)
 }
 .work__left-web{
     font-size: rem(16px);
     color: #18489b;
     margin-bottom: rem(55px);
+    @include roboto(medium, normal);
 }
 .work__right{
     display: flex;
@@ -43,6 +46,13 @@
     color: #ffffff;
     border: 0;
     font-size: rem(16px);
+    @include roboto(medium, normal);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.work__button-svg {
+    padding-right: rem(10px);
 }
 .reviews{
     display: flex;
@@ -56,9 +66,14 @@
 .review__text{
     display: flex;
     align-items: flex-start;
+    text-align: center;
+    padding: rem(50px) 0;
     justify-content: center;
     font-size: rem(63px);
     color: #ffffff;
+    width: 40%;
+    margin: 0 auto;
+    @include sansus();
 }
 
 .reviews__list{
@@ -89,12 +104,15 @@
 .reviews__txt{
     font-size: rem(16px);
     margin-bottom: rem(20px);
+    @include roboto(italic, italic);
 }
 .reviews__name{
     font-size: rem(16px);
+    @include roboto(bold, italic);
 }
 .reviews__rang{
     margin-bottom: rem(70px);
+    @include roboto(italic, italic);
 }
 .reviews__center{
     display: flex;
@@ -107,7 +125,7 @@
     color: #ffffff;
 }
 .work__input{
-    background: rgba(0, 0, 0, .7);
+    background: rgba(44, 39, 46, 0.5);
     width: rem(340px);
     border: 0;
     color: #ffffff;
@@ -115,9 +133,13 @@
 }
 .work__input-text{
     height: rem(45px);
+    padding: rem(20px);
+    @include roboto(regular, normal);
 }
 .work__text-area{
     height: rem(130px);
+    padding: rem(20px);
+    @include roboto(regular, normal);
 }
 .reviews__button{
     background-color: rgba(0, 0, 0, 0);

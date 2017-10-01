@@ -2,6 +2,7 @@
     font-size: rem(35px);
     margin-bottom: rem(35px);
     @include sansus;
+    text-transform: uppercase;
 }
 .hero__field{
     width: rem(340px);
@@ -15,6 +16,7 @@
     margin-bottom: rem(20px);
     &:last-child{
         margin-bottom: 0;
+        margin-top: rem(16px);
         width: 100%;
     }
 }
@@ -28,20 +30,24 @@
     background-color: #f0efe9;
     justify-content: center;
     align-items: center;
+    width: rem(340px);
+    height: rem(45px);
 }
 
 .form__authorization-icon{
     height: rem(16px);
-    width: rem(48px);
+    width: rem(50px);
 }
 
 .form__authorization-input{
     width: 100%;
     border: none;
-    height: rem(36px);
+    height: rem(45px);
+    padding-left: rem(20px);
+    @include roboto(regular, normal);
 }
 .hero__robot-text{
-    margin-bottom: rem(20px);
+    margin-bottom: rem(8px);
     @include roboto(bold, normal);
 }
 .hero__radio {
@@ -63,7 +69,7 @@
     width: rem(20px);
     height: rem(20px);
     border-radius: 50%;
-    margin-left: rem(35px);
+    margin-left: rem(20px);
     background: #fff;
     position: relative;
     &:after {
@@ -99,7 +105,7 @@
   
   .hero__radio_checkbox {
     .hero__radio-fake {
-      border-radius: rem(0px);
+      border-radius: rem(2px);
         
     }
     .hero__radio-elem {
@@ -111,12 +117,13 @@
     }
     .hero__radio-elem:checked {
       &+.hero__radio-fake {
+        border-radius: rem(3px);
         &:after {
           background: url("../images/check.png") 50% no-repeat transparent;
           background-color: $blue;
           width: 100%;
           height: 100%;
-          border-radius: rem(0px);
+          border-radius: rem(2px);
         }
       }
     }

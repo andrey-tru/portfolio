@@ -4,28 +4,58 @@ block variables
   - var title = 'Блог'
 
 block content
-  include ../common/header.pug
+  section.header-background.header-blog
+    .container
+        .menu__container
+            ul.social
+                li.social__item
+                    a(href="https://vk.com/andrei_tr").social__btn
+                        svg.social__link
+                            use(xlink:href="assets/images/sprite/sprite.svg#vk")
+                li.social__item
+                    a(href="https://github.com/andrey-tru").social__btn
+                        svg.social__link
+                            use(xlink:href="assets/images/sprite/sprite.svg#github")
+                li.social__item
+                    a(href="https://www.instagram.com/andres36n/").social__btn
+                        svg.social__link
+                            use(xlink:href="assets/images/sprite/sprite.svg#inst")
+            .hamburger-menu
+                a(href="#").hamburger-menu-link
+                .hamburger-menu-link__bars
+        .header__center-blog
+            .header__info
+                .header__img
+                .header__title Блог
+                .header__text Статьи, которые я написал
+    .triangle-container
+        .header__triangle
+            svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle")
+                polygon(class = "blog-triangle" points="0,0   0,200   1000,200   1000,75.5")
+        .header__triangle
+            svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle")
+                polygon(class = "blog-triangle" points="1000, 0   1000, 200   0, 200   0, 75.5")
   section.blog-section
     .blog__left
       ul.blog-named__list
-        li.blog-named__item.blog-name__active
-          .blog-name Самое важное в SASS
+        li.blog-named__item.active
+          a.blog-name Самое важное в SASS
         li.blog-named__item
-          .blog-name Самое важное в SASS
+          a.blog-name Самое важное в SASS
         li.blog-named__item
-          .blog-name Самое важное в SASS
+          a.blog-name Самое важное в SASS
         li.blog-named__item
-          .blog-name Самое важное в SASS
+          a.blog-name Самое важное в SASS
     .blog__right
       ul.blog-content__list
-        li.blog-content__item.blog-content__active
+        li.blog-content__item
           .blog-content__name Самое важное в SASS
-          .blog-content__date 21.09.2017
+          .blog-content__date 13 ноября 2016
           p.blog-content__text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
           .blog-content__border-block
-        li.blog-content__item.blog-content__active
+        li.blog-content__item
           .blog-content__name Самое важное в SASS
-          .blog-content__date 21.09.2017
+          .blog-content__date 13 ноября 2016
           p.blog-content__text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
           .blog-content__border-block
     include ../common/footer.pug

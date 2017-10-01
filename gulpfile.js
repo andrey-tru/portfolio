@@ -31,6 +31,10 @@ const paths = {
     images: {
         src: 'src/images/**/*.*',
         dest: 'build/assets/images/'
+    },
+    fonts: {
+        src: 'src/fonts/*.*',
+        dest: 'build/assets/fonts/'
     }
 };
 
@@ -50,7 +54,7 @@ function styles() {
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.styles.dest))       
 }
-
+  
 // webpack
 function scripts() {
     return gulp.src('src/scripts/app.js')
@@ -69,12 +73,19 @@ function images() {
           .pipe(gulp.dest(paths.images.dest));
 }
 
+// fonts
+function fonts() {
+    return gulp.src(paths.fonts.src)
+        .pipe(gulp.dest(paths.fonts.dest));
+}
+
 // следим за src и запускаем нужные таски (компиляция и пр.)
 function watch() {
     gulp.watch(paths.scripts.src, scripts);
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.images.src, images);
+    gulp.watch(paths.fonts.src, fonts);
 }
 
 // следим за build и релоадим браузер
@@ -91,12 +102,13 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.templates = templates;
 exports.images = images;
+exports.fonts = fonts;
 exports.watch = watch;
 exports.server = server;
 
 // сборка и слежка
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, scripts, templates, images),
+    gulp.parallel(styles, scripts, templates, images, fonts),
     gulp.parallel(watch, server)
 ));

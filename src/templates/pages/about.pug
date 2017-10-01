@@ -4,7 +4,41 @@ block variables
   - var title = 'Обо мне'
 
 block content  
-  include ../common/header.pug
+  section.section.header-background
+    .container
+      .menu__container
+        ul.social
+            li.social__item
+                a(href="https://vk.com/andrei_tr").social__btn
+                    svg.social__link
+                        use(xlink:href="assets/images/sprite/sprite.svg#vk")
+            li.social__item
+                a(href="https://github.com/andrey-tru").social__btn
+                    svg.social__link
+                        use(xlink:href="assets/images/sprite/sprite.svg#github")
+            li.social__item
+                a(href="https://www.instagram.com/andres36n/").social__btn
+                    svg.social__link
+                        use(xlink:href="assets/images/sprite/sprite.svg#inst")
+        .hamburger-menu
+            a(href="#").hamburger-menu-link
+            .hamburger-menu-link__bars
+      .header__bot
+        .header__center
+            .header__info
+                .header__img
+                .header__name Андрей Трухачев
+                .header__text Личный сайт веб разработчика
+        .arrow 
+          svg.arrow__icon
+              use(xlink:href="assets/images/sprite/sprite.svg#arrow")
+    .triangle-container
+        .header__triangle
+            svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle")
+                polygon(class = "left" points="0,0   0,200   1000,200   1000,75.5")
+        .header__triangle
+            svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle")
+                polygon(class = "right" points="1000, 0   1000, 200   0, 200   0, 75.5")
   section.section
     .container
       .info
@@ -78,32 +112,31 @@ block content
                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-95")
 
   section.section.map
-    .map__data
-      .contacts
-        .contacts__title
-          .block-text Контакты
-          .block-band 
-        .contacts__center
-          ul.contacts__list
-            li.contacts__item
-              .contacts-row__item 
-                svg(class="contacts-icon") 
-                  use(xlink:href="assets/images/sprite/sprite.svg#skype")
-              .contacts-row__content andrei_67705
-            li.contacts__item
-              .contacts-row__item 
-                svg(class="contacts-icon") 
-                  use(xlink:href="assets/images/sprite/sprite.svg#mail")
-              .contacts-row__content a.truxachev@mail.ru
-          ul.contacts__list
-            li.contacts__item
-              .contacts-row__item 
-                svg(class="contacts-icon") 
-                    use(xlink:href="assets/images/sprite/sprite.svg#phone")
-              .contacts-row__content +7 (900)-306-46-44
-            li.contacts__item
-              .contacts-row__item 
-                svg(class="contacts-icon") 
-                    use(xlink:href="assets/images/sprite/sprite.svg#map_marker")
-              .contacts-row__content Россия г.Воронеж, ул.Ленина 1
+    .contacts
+      .contacts__title
+        .block-text Контакты
+        .block-band 
+      .contacts__center
+        ul.contacts__list
+          li.contacts__item
+            .contacts-row__item 
+              svg(class="contacts-icon") 
+                use(xlink:href="assets/images/sprite/sprite.svg#skype")
+            .contacts-row__content andrei_67705
+          li.contacts__item
+            .contacts-row__item 
+              svg(class="contacts-icon") 
+                use(xlink:href="assets/images/sprite/sprite.svg#mail")
+            .contacts-row__content a.truxachev@mail.ru
+        ul.contacts__list
+          li.contacts__item
+            .contacts-row__item 
+              svg(class="contacts-icon") 
+                  use(xlink:href="assets/images/sprite/sprite.svg#phone")
+            .contacts-row__content +7 (900)-306-46-44
+          li.contacts__item
+            .contacts-row__item 
+              svg(class="contacts-icon") 
+                  use(xlink:href="assets/images/sprite/sprite.svg#map_marker")
+            .contacts-row__content Россия г.Воронеж, ул.Ленина 1
     include ../common/footer.pug

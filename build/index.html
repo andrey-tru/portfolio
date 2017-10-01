@@ -2,7 +2,7 @@
 <html land="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Авторизуйтесь</title>
+    <title>Андрей Трухачев</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -13,50 +13,36 @@
   <body>
     <div class="wrapper">
       <div class="maincontent">
-        <section class="section hero header-background">
+        <section class="section welcome header-background">
           <div class="container">
+            <div class="authorization-wel"><a class="authorization-wel__btn" href="/authorization.html">Авторизоваться</a></div>
             <div class="form-center">
               <form class="form">
-                <div class="hero__text">Авторизуйтесь</div>
-                <div class="form__authorization">
-                  <label class="form__authorization-label" for="email">
-                    <svg class="form__authorization-icon">
-                      <use xlink:href="assets/images/sprite/sprite.svg#login"></use>
-                    </svg>
-                    <input class="form__authorization-input" name="email" id="email">
-                  </label>
+                <div class="header__center header-wel">
+                  <div class="header__info">
+                    <div class="header__img"></div>
+                    <div class="header-wel__name">Андрей Трухачев</div>
+                    <div class="header__text">Личный сайт веб разработчика</div>
+                  </div>
                 </div>
-                <div class="form__authorization">
-                  <label class="form__authorization-label" for="password"> 
-                    <svg class="form__authorization-icon">
-                      <use xlink:href="assets/images/sprite/sprite.svg#passworld"></use>
-                    </svg>
-                    <input class="form__authorization-input" name="password" id="password">
-                  </label>
-                </div>
+                <ul class="social-wel">
+                  <li class="social__item"><a class="social__btn" href="https://vk.com/andrei_tr">
+                      <svg class="social__link-icon">
+                        <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="social__item"><a class="social__btn" href="https://github.com/andrey-tru">
+                      <svg class="social__link-icon">
+                        <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="social__item"><a class="social__btn" href="https://www.instagram.com/andres36n/">
+                      <svg class="social__link-icon">
+                        <use xlink:href="assets/images/sprite/sprite.svg#inst"></use>
+                      </svg></a></li>
+                </ul>
                 <div class="hero__block">
-                  <label class="hero__radio hero__radio_checkbox">
-                    <input class="hero__radio-elem" type="checkbox" name="checkbox" id="checkbox">
-                    <div class="hero__radio-fake"> </div>
-                    <div class="hero__radio-text">Я человек</div>
-                  </label>
-                </div>
-                <div class="hero__robot-text">Вы точно не робот?</div>
-                <div class="hero__block">
-                  <label class="hero__radio">
-                    <input class="hero__radio-elem" type="radio" name="radio" id="radio1">
-                    <div class="hero__radio-fake"></div>
-                    <div class="hero__radio-text">Да              </div>
-                  </label>
-                  <label class="hero__radio">
-                    <input class="hero__radio-elem" type="radio" name="radio" id="radio2">
-                    <div class="hero__radio-fake"> </div>
-                    <div class="hero__radio-text">Не уверен   </div>
-                  </label>
-                </div>
-                <div class="hero__block">
-                  <button class="button button-border" type="button" onclick="window.location.href='/welcome.html'">На главную</button>
-                  <button class="button" type="submit">Войти</button>
+                  <button class="button button-border" type="button" onclick="window.location.href='/my-works.html'">Мои работы</button>
+                  <button class="button button-border" type="button" onclick="window.location.href='/about.html'">Обо мне</button>
+                  <button class="button" type="button" onclick="window.location.href='/blog.html'">Блог</button>
                 </div>
               </form>
             </div>

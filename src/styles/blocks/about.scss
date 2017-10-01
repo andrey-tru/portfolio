@@ -15,7 +15,9 @@
 .block-title{
     font-size: rem(63px);    
     color: #474b57;
-    margin-bottom: rem(60px);
+    margin-bottom: rem(40px);
+    @include sansus();
+    text-transform: uppercase;
 }
 .info__left-content {
     width: 100%;
@@ -30,7 +32,7 @@
     width: 75%;
     height: rem(390px);
     background-size: 100%;
-    margin-bottom: rem(40px);
+    margin-bottom: rem(25px);
 }
 .info__title{
     display: flex;
@@ -43,6 +45,8 @@
     font-size: rem(16px);
     width: rem(420px);
     margin-bottom: rem(26px);
+    text-align: start;
+    @include roboto(regular, normal);
 }
 
 .info__right{
@@ -57,8 +61,10 @@
 }
 .info__right-text{
     font-size: rem(16px);
-    width: rem(530px);
+    width: 100%;
     margin-bottom: rem(55px);
+    text-align: start;
+    @include roboto(regular, normal);
 }
 .info__right-content {
     width: 100%;
@@ -76,6 +82,7 @@
 .skills-row__title {
     font-size: rem(28px);
     margin-bottom: rem(20px);
+    @include roboto(medium, normal);
 }
 
 .skill__circle {
@@ -178,17 +185,15 @@
     justify-content: center;
 }
 
-.map__data {
+.contacts {
     background-color: rgba(221, 228, 239, .7);
     border-radius: 1%;
-}
-
-.contacts {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     padding: 0 rem(32px);
+    margin-bottom: rem(160px);
 }
 .contacts__title{
     display: flex;
@@ -208,12 +213,13 @@
 .contacts__item {
     display: flex;
     align-items: center;
-    margin-bottom: rem(16px);
+    margin-bottom: rem(35px);
+    margin-right: rem(25px);
 }
 
 .contacts-icon {
-    height: rem(20px);
-    width: rem(20px);
+    height: rem(45px);
+    width: rem(45px);
     fill: $blue;
 }
 
@@ -221,4 +227,5 @@
     margin-left: rem(8px);
     font-size: rem(16px);
     color: $blue;
+    @include roboto(medium, normal);
 }

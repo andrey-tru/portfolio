@@ -1,39 +1,34 @@
 extends ../template
 
 block variables
-  - var title = 'Авторизуйтесь'
+  - var title = 'Андрей Трухачев'
 
 block content
-  section.section.hero.header-background
+  section.section.welcome.header-background
     .container
+      .authorization-wel
+        a(href="/authorization.html").authorization-wel__btn Авторизоваться
       .form-center
         form.form
-          .hero__text Авторизуйтесь
-          .form__authorization
-            label(for="email").form__authorization-label
-              svg.form__authorization-icon
-                use(xlink:href="assets/images/sprite/sprite.svg#login")
-              input(name="email" id="email").form__authorization-input
-          .form__authorization
-            label(for="password").form__authorization-label 
-              svg.form__authorization-icon
-                use(xlink:href="assets/images/sprite/sprite.svg#passworld")
-              input(name="password" id="password").form__authorization-input
+          .header__center.header-wel
+            .header__info
+                .header__img
+                .header-wel__name Андрей Трухачев
+                .header__text Личный сайт веб разработчика
+          ul.social-wel
+            li.social__item
+              a(href="https://vk.com/andrei_tr").social__btn
+                svg.social__link-icon
+                  use(xlink:href="assets/images/sprite/sprite.svg#vk")
+            li.social__item
+              a(href="https://github.com/andrey-tru").social__btn
+                svg.social__link-icon
+                  use(xlink:href="assets/images/sprite/sprite.svg#github")
+            li.social__item
+              a(href="https://www.instagram.com/andres36n/").social__btn
+                svg.social__link-icon
+                  use(xlink:href="assets/images/sprite/sprite.svg#inst")
           .hero__block
-            label(class="hero__radio hero__radio_checkbox")
-              input(type="checkbox" name="checkbox" id="checkbox" class="hero__radio-elem")
-              .hero__radio-fake 
-              .hero__radio-text Я человек
-          .hero__robot-text Вы точно не робот?
-          .hero__block
-            label(class="hero__radio")
-              input(type="radio" name="radio" id="radio1" class="hero__radio-elem") 
-              .hero__radio-fake
-              .hero__radio-text Да              
-            label(class="hero__radio")
-              input(type="radio" name="radio" id="radio2" class="hero__radio-elem")
-              .hero__radio-fake 
-              .hero__radio-text Не уверен   
-          .hero__block
-            button(type="button" class="button button-border" onclick="window.location.href='/welcome.html'") На главную
-            button(type="submit" class="button") Войти
+            button(type="button" class="button button-border" onclick="window.location.href='/my-works.html'") Мои работы
+            button(type="button" class="button button-border" onclick="window.location.href='/about.html'") Обо мне
+            button(type="button" class="button" onclick="window.location.href='/blog.html'") Блог
