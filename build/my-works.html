@@ -69,7 +69,7 @@
           <div class="container">
             <div class="work">
               <div class="work__left">
-                <div class="block-text">Сайт школы онлайн образования</div>
+                <div class="block-text work-text">Сайт школы онлайн образования</div>
                 <div class="block-band"></div>
                 <div class="work__left-web">Html, css, javascript</div>
                 <button class="work__button">
@@ -81,17 +81,17 @@
                   <div class="work__button-text">Посмотреть сайт</div>
                 </button>
               </div>
-              <div class="work__right">
-                <div class="container">
-                  <ul id="slides">
-                    <li class="slide showing"></li>
-                    <li class="slide"></li>
-                    <li class="slide"></li>
-                  </ul>
-                  <div class="buttons">
-                    <button class="controls" id="previous">&lt;</button>
-                    <button class="controls" id="next">&gt;</button>
-                  </div>
+              <div class="work__right-pic">
+                <ul id="slides">
+                  <li class="slide showing"></li>
+                  <li class="slide"></li>
+                  <li class="slide"></li>
+                </ul>
+              </div>
+              <div class="work__right-controls">
+                <div class="buttons">
+                  <button class="controls" id="previous">&lt;</button>
+                  <button class="controls" id="next">&gt;</button>
                 </div>
               </div>
             </div>
@@ -102,16 +102,16 @@
             <div class="review__text">Что обо мне говорят</div>
             <ul class="reviews__list">
               <li class="reviews__item">
-                <div class="reviews__img"> </div>
-                <p class="reviews__txt">Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Реторический обеспечивает оксмокс которое океана диких страна он заголовок единственное!</p>
-                <div class="reviews__name">Далеко-далеко</div>
-                <div class="reviews__rang">- преподаватель</div>
+                <div class="reviews__img"> <img src="assets/images/dima.png" alt=""></div>
+                <p class="reviews__txt">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
+                <div class="reviews__name">Ковальчук Дмитрий</div>
+                <div class="reviews__rang">— основатель Loftschool</div>
               </li>
               <li class="reviews__item">
-                <div class="reviews__img"> </div>
-                <p class="reviews__txt">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Жаренные даже, все агентство безопасную подпоясал жизни ipsum грустный мир.</p>
-                <div class="reviews__name">Далеко-далеко</div>
-                <div class="reviews__rang">- преподаватель</div>
+                <div class="reviews__img"> <img src="assets/images/vova.png" alt=""></div>
+                <p class="reviews__txt">Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!</p>
+                <div class="reviews__name">Сабанцев Владимир</div>
+                <div class="reviews__rang">— преподаватель</div>
               </li>
             </ul>
             <div class="reviews__center">
@@ -135,46 +135,48 @@
               <div class="footer__container">     
                 <p class="footer__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
               </div>
-              <div class="footer__container">
-                <div class="footer__menu">
-                  <ul class="menu">
-                    <li class="menu__link"><a class="menu__item" href="/my-works.html"> Мои работы</a></li>
-                    <li class="menu__link"><a class="menu__item" href="/about.html"> Обо мне</a></li>
-                    <li class="menu__link"><a class="menu__item" href="/blog.html"> Блог</a></li>
-                    <li class="menu__link"><a class="menu__item" href="/authorization.html">Авторизация</a></li>
+              <div class="footer-center__container">
+                <div class="footer__container-menu">
+                  <div class="footer__menu">
+                    <ul class="menu">
+                      <li class="menu__link"><a class="menu__item" href="/my-works.html"> Мои работы</a></li>
+                      <li class="menu__link"><a class="menu__item" href="/about.html"> Обо мне</a></li>
+                      <li class="menu__link"><a class="menu__item" href="/blog.html"> Блог</a></li>
+                      <li class="menu__link"><a class="menu__item" href="/authorization.html">Авторизация</a></li>
+                    </ul>
+                  </div>
+                  <ul class="social footer__social">
+                    <li class="social__item"><a class="social__btn" href="https://vk.com/andrei_tr">
+                        <svg class="social__link social__color">
+                          <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__btn" href="https://github.com/andrey-tru">
+                        <svg class="social__link social__color">
+                          <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__btn" href="https://www.instagram.com/andres36n/">
+                        <svg class="social__link social__color">
+                          <use xlink:href="assets/images/sprite/sprite.svg#inst"></use>
+                        </svg></a></li>
                   </ul>
                 </div>
-                <ul class="social">
-                  <li class="social__item"><a class="social__btn" href="https://vk.com/andrei_tr">
-                      <svg class="social__link social__color">
-                        <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
-                      </svg></a></li>
-                  <li class="social__item"><a class="social__btn" href="https://github.com/andrey-tru">
-                      <svg class="social__link social__color">
-                        <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
-                      </svg></a></li>
-                  <li class="social__item"><a class="social__btn" href="https://www.instagram.com/andres36n/">
-                      <svg class="social__link social__color">
-                        <use xlink:href="assets/images/sprite/sprite.svg#inst"></use>
-                      </svg></a></li>
-                </ul>
-              </div>
-              <div class="footer__container">     
-                <div class="contacts__center"></div>
-                <ul class="contacts__list">
-                  <li class="footer__item">
-                    <div class="footer__text">andrei_67705</div>
-                  </li>
-                  <li class="footer__item">
-                    <div class="footer__text">a.truxachev@mail.ru</div>
-                  </li>
-                  <li class="footer__item">
-                    <div class="footer__text">+7 (900)-306-46-44</div>
-                  </li>
-                  <li class="footer__item">
-                    <div class="footer__text">Россия г.Воронеж, ул.Ленина 1</div>
-                  </li>
-                </ul>
+                <div class="footer__container-menu">  
+                  <div class="contacts__center"></div>
+                  <ul class="contacts__list">
+                    <li class="footer__item">
+                      <div class="footer__text text__end">andrei_67705</div>
+                    </li>
+                    <li class="footer__item">
+                      <div class="footer__text text__end">a.truxachev@mail.ru</div>
+                    </li>
+                    <li class="footer__item">
+                      <div class="footer__text text__end">+7 (900)-306-46-44</div>
+                    </li>
+                    <li class="footer__item">
+                      <div class="footer__text text__end">Россия г.Воронеж, ул.Ленина 1</div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

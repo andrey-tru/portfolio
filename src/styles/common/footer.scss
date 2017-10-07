@@ -7,44 +7,94 @@
     right: 0;
     bottom: 0;
     z-index: 1; 
+    @include tablets{
+        height: rem(190px);
+    }
+    @include phones{
+        height: rem(290px);
+    }
 }
 .footer__center{
+    padding: rem(30px);
     display: flex;
     flex-direction: row;
-    padding: rem(30px) 0;
+    @include tablets{
+        flex-direction: column;
+    }
+    @include phones{
+        padding: rem(20px) rem(5px);
+    }
+}
+.footer-center__container{
+    display: flex;
+    flex-direction: row;
+    width: 66%;
+    @include tablets{
+        width: 100%;
+    }
+    @include phones{
+        flex-direction: column;
+    }
 }
 .footer__container {
     width: 33%;
+    border-right: 1px solid #63656c;
+    margin-right: rem(30px);
+    @include tablets{
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #63656c;
+        padding-bottom: rem(20px);
+        margin-bottom: rem(15px);
+    }
+}
+.footer__container-menu {    
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-right: 1px solid #63656c;
+    margin-right: rem(30px);
     &:last-child{
         border: 0;
+        margin: 0;
+    }
+    @include tablets{
+        border: 0;
+        width: 60%;
+        justify-content: flex-start;
+        &:last-child{
+            width: 40%;
+        }
+    }
+    @include phones{
+        width: 100%;
+        &:first-child{            
+            border-bottom: 1px solid #63656c;
+            margin-bottom: rem(15px);
+        }
+        &:last-child{
+            width: 100%;
+        }
     }
 }
-
 .footer__menu {
     width: 100%;
-    padding: 0 rem(30px);
+    @include tablets{
+        margin-bottom: rem(15px);
+    }
 }
 
 
 .footer__social {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    padding: 0;
+    @include phones{
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(15px);
+    }
 }
 
-.footer__social-item {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    margin-right: rem(20px);
-    opacity: 0.5;
-}
 .footer__item{
     display: flex;
     align-items: center;
@@ -52,14 +102,29 @@
     &:first-child{
         margin: 0;
     }
+    @include tablets{
+        display: block;
+    }
 }
 
 .footer__text {
     font-size: rem(16px);
     color: #c4c6cb;
     margin-bottom: rem(0px);
-    padding: 0 rem(30px); 
     @include roboto(light, normal);
+    @include tablets{
+        text-align: center;
+        font-size: rem(14px);
+    }
+}
+
+.text__end{
+    @include tablets{
+        text-align: end;
+    }
+    @include phones{        
+        text-align: center;
+    }
 }
 .social__color{
     opacity: 0.5;

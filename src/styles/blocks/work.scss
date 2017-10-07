@@ -1,10 +1,11 @@
 .work{
     display: flex;
-    flex-direction: row;
-    height: 100%;
-}
-.work__figure{
-
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    @include tablets{
+        height: auto;
+    }
 }
 .work__left{
     display: flex;
@@ -13,6 +14,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @include tablets{
+        width: 100%;
+        height: rem(270px);
+    }
+    @include phones{
+        height: rem(220px);
+    }
 }
 .block-text{
     font-size: rem(36px);
@@ -22,6 +30,12 @@
     margin-bottom: rem(20px);
     @include sansus();
     text-transform: uppercase;
+    @include tablets{
+        font-size: rem(30px);
+    }
+    @include phones{
+        font-size: rem(21px);
+    }
 }
 .block-band{
     width: rem(90px);
@@ -34,10 +48,48 @@
     color: #18489b;
     margin-bottom: rem(55px);
     @include roboto(medium, normal);
+    @include tablets{
+        margin-bottom: rem(30px);
+    }
+    @include phones{        
+        margin-bottom: rem(20px);
+        font-size: rem(14px);
+    }
 }
-.work__right{
+.work-text{
+    @include tablets{
+        width: rem(460px);
+    }
+    @include phones{
+        width: rem(200px);
+    }
+}
+.work__right-pic{
     display: flex;
     width: 50%;
+    height: 70%;
+    position: relative;
+    @include tablets{
+        width: 100%;
+        height: rem(530px);
+        order: -1;
+    }
+    @include phones{
+        height: rem(255px);
+    }
+}
+.work__right-controls{
+    display: flex;
+    width: 50%;
+    height: 30%;
+    flex-wrap: wrap;
+    @include tablets{
+        width: 100%;
+        height: rem(210px);
+    }
+    @include phones{
+        height: rem(95px);
+    }
 }
 .work__button{
     width: rem(200px);
@@ -50,6 +102,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    @include phones{        
+        font-size: rem(14px);
+    }
 }
 .work__button-svg {
     padding-right: rem(10px);
@@ -62,6 +118,9 @@
     background-size: cover;
     position: relative;
     height: auto;
+    @include phones{
+        padding-bottom: rem(100px);
+    }
 }
 .review__text{
     display: flex;
@@ -71,9 +130,18 @@
     justify-content: center;
     font-size: rem(63px);
     color: #ffffff;
-    width: 40%;
+    width: 45%;
     margin: 0 auto;
     @include sansus();
+    @include tablets{
+        font-size: rem(49px);
+        padding: rem(45px) 0;
+    }
+    @include phones{
+        font-size: rem(35px);
+        padding: rem(35px) 0;
+        width: 90%;
+    }
 }
 
 .reviews__list{
@@ -86,7 +154,7 @@
 }
 .reviews__item{
     width: rem(380px);
-    padding: 0 10px;
+    padding: 0 15px;
     position: relative;
     color: #ffffff;
     text-align: center;
@@ -96,7 +164,6 @@
     height: rem(80px);
     border-radius: 50%;
     margin: 0 auto;
-    background: url("../images/my.png") center center no-repeat;
     background-size: 100%;
     overflow: hidden;
     margin-bottom: rem(20px);
@@ -105,14 +172,26 @@
     font-size: rem(16px);
     margin-bottom: rem(20px);
     @include roboto(italic, italic);
+    @include tablets{
+        font-size: rem(14px);
+    }
+    @include phones{
+        text-align: left;
+    }
 }
 .reviews__name{
     font-size: rem(16px);
     @include roboto(bold, italic);
+    @include phones{
+        font-size: rem(14px);
+    }
 }
 .reviews__rang{
     margin-bottom: rem(70px);
     @include roboto(italic, italic);
+    @include phones{
+        font-size: rem(14px);
+    }
 }
 .reviews__center{
     display: flex;
@@ -130,6 +209,12 @@
     border: 0;
     color: #ffffff;
     margin-bottom: rem(20px);
+    @include tablets{
+        width: rem(305px);
+    }
+    @include phones{
+        width: rem(255px);
+    }
 }
 .work__input-text{
     height: rem(45px);
@@ -140,6 +225,12 @@
     height: rem(130px);
     padding: rem(20px);
     @include roboto(regular, normal);
+    @include tablets{
+        width: rem(305px);
+    }
+    @include phones{
+        width: rem(255px);
+    }
 }
 .reviews__button{
     background-color: rgba(0, 0, 0, 0);

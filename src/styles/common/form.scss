@@ -14,6 +14,14 @@
     background: rgba(0, 0, 0, .5);
     color: #ffffff;
     font-size: 16px;
+    @include tablets{
+        width: rem(348px);
+        font-size: rem(14px);
+    }
+    @include phones{
+        width: rem(300px);
+        font-size: rem(14px);
+    }
 }
 .button{
     width: 50%;

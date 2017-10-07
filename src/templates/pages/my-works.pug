@@ -45,7 +45,7 @@ block content
     .container
       .work
         .work__left
-          .block-text Сайт школы онлайн образования
+          .block-text.work-text Сайт школы онлайн образования
           .block-band
           .work__left-web Html, css, javascript
           button.work__button
@@ -53,22 +53,31 @@ block content
               svg.social__link
                 use(xlink:href="assets/images/sprite/sprite.svg#link")
             .work__button-text Посмотреть сайт
-        .work__right
-          include ../common/slider.pug
+        .work__right-pic
+          ul#slides
+            li.slide.showing
+            li.slide
+            li.slide
+        .work__right-controls
+          .buttons
+            button.controls#previous &lt;
+            button.controls#next &gt;
   section.section.reviews
     .container
       .review__text Что обо мне говорят
       ul.reviews__list
         li.reviews__item
           .reviews__img 
-          p.reviews__txt Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Реторический обеспечивает оксмокс которое океана диких страна он заголовок единственное!
-          .reviews__name Далеко-далеко
-          .reviews__rang - преподаватель
+            img(src="assets/images/dima.png", alt="")
+          p.reviews__txt Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+          .reviews__name Ковальчук Дмитрий
+          .reviews__rang — основатель Loftschool
         li.reviews__item
           .reviews__img 
-          p.reviews__txt Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Жаренные даже, все агентство безопасную подпоясал жизни ipsum грустный мир.
-          .reviews__name Далеко-далеко
-          .reviews__rang - преподаватель
+            img(src="assets/images/vova.png", alt="")
+          p.reviews__txt Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
+          .reviews__name Сабанцев Владимир
+          .reviews__rang — преподаватель
       .reviews__center
         form.form.reviews__form
           .block-text.color__text Связаться со мной

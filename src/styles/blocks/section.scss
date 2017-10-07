@@ -3,4 +3,7 @@
 	position: relative;
   display: flex;
   overflow: hidden;
+  @include phones{
+    min-height: auto;
+  }
 }

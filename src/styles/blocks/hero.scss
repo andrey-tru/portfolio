@@ -3,6 +3,9 @@
     margin-bottom: rem(35px);
     @include sansus;
     text-transform: uppercase;
+    @include tablets{
+      font-size: rem(30px);
+    }
 }
 .hero__field{
     width: rem(340px);
@@ -19,6 +22,9 @@
         margin-top: rem(16px);
         width: 100%;
     }
+    @include phones{
+      font-size: rem(14px);
+    }
 }
 .form__authorization {
     display: flex;
@@ -32,11 +38,20 @@
     align-items: center;
     width: rem(340px);
     height: rem(45px);
+    @include tablets{
+      width: rem(305px);
+    }
+    @include phones{
+      width: rem(260px);
+    }
 }
 
 .form__authorization-icon{
     height: rem(16px);
     width: rem(50px);
+    @include tablets{
+      width: rem(45px);
+    }
 }
 
 .form__authorization-input{
@@ -101,6 +116,9 @@
     color: #fff;
     margin-left: rem(10px);
     @include roboto(regular, normal);
+    @include phones{
+      font-size: rem(14px);
+    }
   }
   
   .hero__radio_checkbox {

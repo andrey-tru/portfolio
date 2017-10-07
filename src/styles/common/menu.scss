@@ -7,11 +7,22 @@
         &:last-child{
             margin: 0;
         }
+        @include phones{            
+            margin-right: rem(10px);
+        }
         .menu__item {
             text-decoration: none;
             color: #ffffff;
             font-size: rem(16px);
             @include roboto(light, normal);
+            @include tablets{                
+                font-size: rem(14px);
+            }
         }
+    }
+    
+    @include phones{            
+        display: flex;
+        justify-content: center;
     }
 }

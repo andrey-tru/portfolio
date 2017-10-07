@@ -2,6 +2,9 @@
     font-size: rem(28px);
     @include roboto(medium, normal);
     margin-top: rem(10px);
+    @include phones{
+        font-size: rem(21px);
+    }
 }
 .social-wel{
     display: flex;
@@ -25,6 +28,9 @@
     display: flex;
     justify-content: flex-end;
     padding: 0 rem(36px);
+    @include phones{
+        justify-content: center;
+    }
 }
 .authorization-wel__btn{
     display: flex;
@@ -40,5 +46,10 @@
     &:hover{
         background: $blue-dark;
         border: 0;
+    }
+    @include tablets{
+        width: rem(145px);
+        height: rem(40px);
+        font-size: rem(14px);
     }
 }

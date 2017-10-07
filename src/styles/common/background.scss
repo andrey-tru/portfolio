@@ -74,6 +74,9 @@
     color: #ffffff;
     font-size: rem(16px);
     @include roboto(regular, normal);
+    @include tablets{
+        font-size: rem(14px);
+    }
 }
 .header__img{
     width: rem(140px);
@@ -82,6 +85,14 @@
     background: url("../images/my.png") center center no-repeat;
     background-size: 100%;
     overflow: hidden;
+    @include tablets{
+        width: rem(145px);
+        height: rem(145px);
+    }
+    @include phones{
+        width: rem(140px);
+        height: rem(140px);
+    }
 }
 .header__name{
     font-size: rem(35px);
@@ -90,6 +101,12 @@
 .header__title{
     font-size: rem(63px);
     @include sansus();
+    @include tablets{
+        font-size: rem(49px);
+    }
+    @include phones{
+        font-size: rem(35px);
+    }
 }
 .arrow {
     position: absolute;
@@ -119,7 +136,7 @@
 
 .header__triangle {
     width: 50%;
-    height: rem(320px);
+    height: rem(205px);
     position: relative;
 }
 
@@ -150,6 +167,9 @@
 
 .triangle .right {
     fill: #f4f5f0;
+    @include tablets{        
+        fill: #f2f0e8;
+    }
 }
 .triangle .blog-triangle{
     fill: #faf8f0;
@@ -166,6 +186,7 @@
     position: absolute;
     width: 100%;
     z-index: 10000;
+    bottom: 0;
     height: rem(175px);
 }
 .triangle-text{
@@ -177,4 +198,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include tablets{
+        font-size: rem(49px);
+    }
+    @include phones{
+        height: 80%;
+        font-size: rem(35px);
+    }
 }

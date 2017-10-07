@@ -3,12 +3,22 @@
     padding-bottom: rem(160px);
     padding-top: rem(70px);
     background: #faf8f0;
+    @include tablets{
+        margin-bottom: rem(190px);
+        padding: 0;
+    }
+    @include phones{
+        margin-bottom: rem(290px);
+    }
 }
 
 .blog__left {
     width: 25%;
     display: flex;
     justify-content: flex-end;
+    @include tablets{
+        display: none;
+    }
 }
 
 .blog-named__item {
@@ -36,13 +46,32 @@
 .blog__right {
     width: 75%;
     padding: 0 10%;
+    @include tablets{
+        width: 100%;
+    }
 }
 
+.blog-content__item{
+    border-bottom: 5px solid #ebebe4;
+    margin-bottom: rem(50px);
+    &:last-child{
+        border: 0;
+    }
+    @include phones{        
+        margin-bottom: rem(25px);
+    }
+}
 .blog-content__name {
     margin-top: 0;
     font-size: rem(35px);
     margin-bottom: 1rem;
     @include sansus();
+    @include tablets{
+        font-size: rem(30px);
+    }
+    @include phones{
+        font-size: rem(21px);
+    }
 }
 
 .blog-content__date {
@@ -51,13 +80,18 @@
     font-weight: 300;
     margin-bottom: rem(16px);
     @include roboto(regular, normal);
+    @include tablets{
+        font-size: rem(14px);
+    }
 }
 
 .blog-content__text {
     font-size: rem(16px);
     font-weight: 400;
-    margin-bottom: rem(50px);
     @include roboto(regular, normal);
+    @include tablets{
+        font-size: rem(14px);
+    }
 }
 
 .blog-content__border-block {
