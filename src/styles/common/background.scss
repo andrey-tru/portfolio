@@ -48,9 +48,6 @@
     align-items: flex-end;
     height: 80vh;
 }
-.header__center{  
-    height: 60vh;
-}
 .header__center-blog{
     display: flex;
     justify-content: center;
@@ -73,6 +70,7 @@
     flex-direction: column;
     color: #ffffff;
     font-size: rem(16px);
+    height: rem(330px);
     @include roboto(regular, normal);
     @include tablets{
         font-size: rem(14px);
@@ -151,8 +149,8 @@
 .triangle {
     position: absolute;
     width: 100%;
-    top: rem(-190px);
-    height: rem(190px);
+    top: rem(-120px);
+    height: rem(120px);
 }
 .triangle-work{
     height: auto; 

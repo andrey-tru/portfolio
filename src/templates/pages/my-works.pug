@@ -85,7 +85,7 @@ block content
           input(type="text" id="name" placeholder="Ваше имя").work__input.work__input-text
           input(type="text" id="email" placeholder="Ваш e-mail").work__input.work__input-text
           input(type="text" id="message" placeholder="Ваше сообщение").work__input.work__text-area  
-          .hero__block
-            button(type="submit" class="button") Отправить
-            button(type="submit" class="button reviews__button") Очистить
+          .hero__block            
+            input(type="submit" value="Отправить").button
+            input(type="reset" value="Очистить").button.reviews__button
   include ../common/footer.pug

@@ -9,9 +9,9 @@ body{
     background: #ffffff;
 }
 
+@import 'layout/media';
 @import 'layout/normalize';
 @import 'layout/layout';
-@import 'layout/media';
 @import 'layout/fonts';
 
 @import 'common/technologies';

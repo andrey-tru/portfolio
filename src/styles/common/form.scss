@@ -30,7 +30,11 @@
     background-color: $blue;
     @include roboto(medium, normal);
     border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
+    text-decoration: none;
     outline: none;
     cursor: pointer;
     &:hover{

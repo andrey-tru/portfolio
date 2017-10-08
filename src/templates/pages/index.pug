@@ -10,7 +10,7 @@ block content
         a(href="/authorization.html").authorization-wel__btn Авторизоваться
       .form-center
         form.form
-          .header__center.header-wel
+          .header__center
             .header__info
                 .header__img
                 .header-wel__name Андрей Трухачев
@@ -29,6 +29,6 @@ block content
                 svg.social__link-icon
                   use(xlink:href="assets/images/sprite/sprite.svg#inst")
           .hero__block
-            button(type="button" class="button button-border" onclick="window.location.href='/my-works.html'") Мои работы
-            button(type="button" class="button button-border" onclick="window.location.href='/about.html'") Обо мне
-            button(type="button" class="button" onclick="window.location.href='/blog.html'") Блог
+            a(href="/my-works.html").button.button-border Мои работы
+            a(href="/about.html").button.button-border Обо мне
+            a(href="/blog.html").button Блог
