@@ -35,6 +35,10 @@ const paths = {
     fonts: {
         src: 'src/fonts/*.*',
         dest: 'build/assets/fonts/'
+    },
+    video: {
+        src: 'src/video/*.*',
+        dest: 'build/assets/video/'
     }
 };
 
@@ -79,6 +83,12 @@ function fonts() {
         .pipe(gulp.dest(paths.fonts.dest));
 }
 
+// video
+function video() {
+    return gulp.src(paths.video.src)
+        .pipe(gulp.dest(paths.video.dest));
+}
+
 // следим за src и запускаем нужные таски (компиляция и пр.)
 function watch() {
     gulp.watch(paths.scripts.src, scripts);
@@ -86,6 +96,7 @@ function watch() {
     gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.images.src, images);
     gulp.watch(paths.fonts.src, fonts);
+    gulp.watch(paths.video.src, video);
 }
 
 // следим за build и релоадим браузер
@@ -103,12 +114,13 @@ exports.scripts = scripts;
 exports.templates = templates;
 exports.images = images;
 exports.fonts = fonts;
+exports.video = video;
 exports.watch = watch;
 exports.server = server;
 
 // сборка и слежка
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, scripts, templates, images, fonts),
+    gulp.parallel(styles, scripts, templates, images, fonts, video),
     gulp.parallel(watch, server)
 ));

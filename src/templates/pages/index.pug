@@ -4,7 +4,13 @@ block variables
   - var title = 'Андрей Трухачев'
 
 block content
-  section.section.welcome.header-background
+  section.section#parallax-background
+    .parallax__layer
+      video(width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop").parallax__layer-video
+        source(src="assets/video/night.mp4" type="video/mp4")
+        source(src="assets/video/night.webm" type="video/webm")
+    .parallax__layer
+      img(src="assets/images/night_bg.png").parallax__layer-img
     .container
       .authorization-wel
         a(href="/authorization.html").authorization-wel__btn Авторизоваться
